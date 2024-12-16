@@ -2,14 +2,10 @@
 
 ### Screenshots
 
-#### Task List
+#### Login List
 
-![Task List](screenshots/task_list.png)
+![Login](images/Login.png)
 
-#### Create Task
+#### Register Task
 
-![Create Task](screenshots/create_task.png)
-
-#### Edit Task
-
-![Edit Task](screenshots/edit_task.png)
+![Register](images/Register.png)

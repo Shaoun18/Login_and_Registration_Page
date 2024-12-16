@@ -2,10 +2,10 @@
 
 ### Screenshots
 
-#### Login List
+#### Login Page
 
 ![Login](images/Login.png)
 
-#### Register Task
+#### Register Page
 
 ![Register](images/Register.png)

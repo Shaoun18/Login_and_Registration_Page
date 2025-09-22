@@ -8,8 +8,8 @@
         <div class = "container">
             <div class="login-box">
     <header id = "head">
-	<h2> 
-		<center>Welcome to Login Database Management System<br/>	
+	<h2>
+		<center>Welcome to Login Database Management System<br/>
 	</h2>
     </header>
             <div class = "row">
@@ -26,8 +26,8 @@
                         </div>
                  <h2><button type = "submit" class="btn-btn-primary"> Login</button></h2>
                     </form>
-                    <a href="Reg.php"><h4>NO Account please Registar Here<h4></a>  
-                </div>          
+                    <a href="Reg.php"><h4>NO Account please Registar Here<h4></a>
+                </div>
             </div>
             <footer id = "foot">
 	<h3><center>All Rights Reserved by Programmershaoun@2021</center>

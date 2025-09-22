@@ -1,8 +1,8 @@
 <?php
-session_start();
-if(!isset($_SESSION['username'])){
-   header('location:index.php');
-}
+    session_start();
+    if (! isset($_SESSION['username'])) {
+        header('location:index.php');
+    }
 ?>
 <html>
 <head>
@@ -14,7 +14,7 @@ if(!isset($_SESSION['username'])){
 <a class = "float-right" href = "logout.php">Logout</a>
 <h1> Welcome  to our Page
 <?php
-echo $_SESSION['name'];
+    echo $_SESSION['name'];
 ?>
 </h1>
 </div>

@@ -1,31 +1,35 @@
-body{
-    background: linear-gradient(rgba(0,0,50,0.5),rgba(0,0,50,0.5),url(image.jpg));
-    background-size: cover;
-    background-position: center;
+body {
+  background: linear-gradient(
+    rgba(0, 0, 50, 0.5),
+    rgba(0, 0, 50, 0.5),
+    url(image.jpg)
+  );
+  background-size: cover;
+  background-position: center;
 }
-.login-box{
-    max-width: 700px;
-    float: none;
-    margin: 100px auto;
+.login-box {
+  max-width: 700px;
+  float: none;
+  margin: 100px auto;
 }
-.login-left{
-    background : rgba(211,211,211,0.5);
-    padding : 30px;
+.login-left {
+  background: rgba(211, 211, 211, 0.5);
+  padding: 30px;
 }
-.login-right{
-    background : rgba(211,211,211,0.5);
-    padding : 30px;
+.login-right {
+  background: rgba(211, 211, 211, 0.5);
+  padding: 30px;
 }
-.form-control{
-    background-color: transparent  !important;
+.form-control {
+  background-color: transparent !important;
 }
-a{
-    color : blueviolet !important;
-    margin-top: -40px !important;
+a {
+  color: blueviolet !important;
+  margin-top: -40px !important;
 }
-h1{
-    color : black !important;
-    margin-top: 40px !important;
-    text-align: center;
-    text-transform: uppercase;
+h1 {
+  color: black !important;
+  margin-top: 40px !important;
+  text-align: center;
+  text-transform: uppercase;
 }

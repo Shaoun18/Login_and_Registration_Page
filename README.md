@@ -7,3 +7,7 @@
 ## Registration Page
 
 ![Register](images/Register.png)
+
+## Profile Page
+
+![Register](images/Profile.png)

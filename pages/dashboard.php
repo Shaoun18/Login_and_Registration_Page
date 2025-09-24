@@ -13,8 +13,6 @@ if (!isset($_SESSION['username'])) {
 
 <body>
     <?php include 'includes/header.php' ?>
-
-
     <div class="container">
         <div class="login-box">
             <header id="head">

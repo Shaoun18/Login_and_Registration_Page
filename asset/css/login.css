@@ -24,9 +24,9 @@ h1 {
   text-transform: uppercase;
 }
 
-.login-input,
-.password-input {
+.input_value {
   margin: auto;
+  margin-bottom: 10px;
 }
 
 .btn {

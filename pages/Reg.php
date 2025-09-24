@@ -1,52 +1,79 @@
-<html>
+<?php include 'includes/header.php'; ?>
 
-<head>
-    <title>User Registration Page</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="login.css" type="text/css" />
-</head>
+<div class="container">
+    <div class="login-box">
+        <header id="head">
+            <h2>
+                Welcome to Register Database Management System <br />
+            </h2>
+        </header>
 
-<body>
-    <div class="container">
-        <div class="login-box">
-            <header id="head">
-                <h2>
-                    <center>Welcome to Registar Database Management System <br />
-                </h2>
-            </header>
-            <div class="col-md-6 login-right">
-                <center>
-                    <h2> Register Here</h2>
-                    <form action="registation.php" method="POST">
-                        <div class="form-group">
-                            <label> Enter your fname : </label>
-                            <input type="text" value="Mr / Ms" name="fname" placeholder="first name" class="form-control" required><br />
-                            <label> Enter your lname : </label>
-                            <input type="text" name="lname" placeholder="last name" class="form-control" required><br />
-                            <label>Enter your Phone Number : </label>
-                            <input type="text" value="+880" name="Phone" placeholder="Phone Number" class="form-control" required><br />
+        <div class="row" style="margin: auto;">
+            <div class="login-left">
+                <!-- <div class="col-md-6 login-right"> -->
+
+                <h1> Register Here</h1>
+                <form action="action.php?page=registration_db" method="POST">
+
+                    <div class="row mb-3">
+                        <!-- <label class="col-sm-3 col-form-label">Name</label> -->
+                        <div class="col-sm-6 input_value">
+                            <input type="text" class="form-control" name="fname" required placeholder="first name" required>
                         </div>
-                        <div class="form-group">
-                            <label>Enter your Email : </label>
-                            <input type="text" name="user" class="form-control" required>
+                    </div>
+
+                    <div class="row mb-3">
+                        <!-- <label class="col-sm-3 col-form-label">Name</label> -->
+                        <div class="col-sm-6 input_value">
+                            <input type="text" class="form-control" name="lname" required placeholder="last name">
                         </div>
-                        <div class="form-group">
-                            <label>Enter your Password : </label>
-                            <input type="password" name="password" class="form-control" required>
+                    </div>
+
+                    <div class="row mb-3">
+                        <!-- <label class="col-sm-3 col-form-label">Name</label> -->
+                        <div class="col-sm-6 input_value">
+                            <input type="text" class="form-control" value="+880" name="phone" required placeholder="Phone Number">
                         </div>
-                        <h2><button type="submit"> Register</button></h2>
-                    </form>
-                    <a href="index.php">
-                        <h4>Login<h4>
-                    </a>
+                    </div>
+
+                    <div class="row mb-3">
+                        <!-- <label class="col-sm-3 col-form-label">Name</label> -->
+                        <div class="col-sm-6 input_value">
+                            <input type="email" class="form-control" name="email" required placeholder="Enter Your Email Address">
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <!-- <label class="col-sm-3 col-form-label">Name</label> -->
+                        <div class="col-sm-6 input_value">
+                            <input type="password" class="form-control" name="password" required placeholder="Password">
+                        </div>
+                    </div>
+
+                    <!-- <div class="form-group">
+                        <label> Enter your fname : </label>
+                        <input type="text" value="Mr / Ms" name="fname" placeholder="first name" class="form-control" required><br />
+                        <label> Enter your lname : </label>
+                        <input type="text" name="lname" placeholder="last name" class="form-control" required><br />
+                        <label>Enter your Phone Number : </label>
+                        <input type="text" value="+880" name="Phone" placeholder="Phone Number" class="form-control" required><br />
+                    </div>
+                    <div class="form-group">
+                        <label>Enter your Email : </label>
+                        <input type="text" name="user" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Enter your Password : </label>
+                        <input type="password" name="password" class="form-control" required>
+                    </div> -->
+                    <div class="col-sm-6 input_value">
+                        <h2><button class="btn btn-secondary" type="submit"> Register</button></h2>
+
+                        <a href="action.php?page=home">
+                            <button class="btn btn-info" type="button" style="width: 50%; margin-left: 110px">Login </button>
+                        </a>
+                    </div>
+                </form>
             </div>
-            <footer id="foot">
-                <h3>
-                    <center>All Rights Reserved by Programmershaoun@2021</center>
-                </h3>
-            </footer>
         </div>
-    </div>
-</body>
-
-</html>
+        <?php include 'includes/footer.php'; ?>

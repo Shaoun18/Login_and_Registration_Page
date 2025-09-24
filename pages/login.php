@@ -1,17 +1,32 @@
 <?php
 session_start();
-include 'db.php';
-$name = $_POST['user'];
-$pass = $_POST['password'];
+include 'db/db.php';
 
-$s = "select * from usertable where name='$name'&&password='$pass'";
+if (isset($_POST['email']) && isset($_POST['password'])) {
+    $email = mysqli_real_escape_string($conn, $_POST['email']);
+    $pass  = mysqli_real_escape_string($conn, $_POST['password']);
 
-$result = mysqli_query($conn, $s);
-$num    = mysqli_num_rows($result);
+    $sql = "SELECT * FROM clients WHERE email='$email' LIMIT 1";
+    $result = mysqli_query($conn, $sql);
 
-if ($num == 1) {
-    $_SESSION['username'] = $name;
-    header('location:home.php');
+    if ($result && mysqli_num_rows($result) === 1) {
+        $row = mysqli_fetch_assoc($result);
+
+        // if you are storing plain password (bad practice but for now)
+        if ($row['password'] === $pass) {
+            $_SESSION['id'] = $row['id'];
+            $_SESSION['username'] = $row['email'];
+            header("Location: action.php?page=dashboard");
+            exit();
+        } else {
+            header("Location: action.php?page=home&error=wrongPass");
+            exit();
+        }
+    } else {
+        header("Location: action.php?page=home&error=noUser");
+        exit();
+    }
 } else {
-    header('location:index.php');
+    header("Location: action.php?page=home");
+    exit();
 }

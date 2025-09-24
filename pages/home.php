@@ -10,19 +10,19 @@
             <div class="login-left">
                 <h1> Login Here</h1>
 
-                <form action="pages/login.php" method="POST">
+                <form action="action.php?page=login_db" method="POST">
 
                     <div class="row mb-3">
                         <!-- <label class="col-sm-3 col-form-label">Name</label> -->
                         <div class="col-sm-6 input_value">
-                            <input type="text" class="form-control" name="user" value="" required placeholder="USERNAME">
+                            <input type="text" class="form-control" name="email" required placeholder="USERNAME">
                         </div>
                     </div>
 
                     <div class=" row mb-3">
                         <!-- <label class="col-sm-3 col-form-label">Name</label> -->
                         <div class="col-sm-6 input_value">
-                            <input type="password" class="form-control" name="password" value="" required placeholder="PASSWORD">
+                            <input type="password" class="form-control" name="password" required placeholder="PASSWORD">
                         </div>
                     </div>
 

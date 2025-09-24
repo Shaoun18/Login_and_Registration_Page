@@ -49,22 +49,6 @@
                         </div>
                     </div>
 
-                    <!-- <div class="form-group">
-                        <label> Enter your fname : </label>
-                        <input type="text" value="Mr / Ms" name="fname" placeholder="first name" class="form-control" required><br />
-                        <label> Enter your lname : </label>
-                        <input type="text" name="lname" placeholder="last name" class="form-control" required><br />
-                        <label>Enter your Phone Number : </label>
-                        <input type="text" value="+880" name="Phone" placeholder="Phone Number" class="form-control" required><br />
-                    </div>
-                    <div class="form-group">
-                        <label>Enter your Email : </label>
-                        <input type="text" name="user" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Enter your Password : </label>
-                        <input type="password" name="password" class="form-control" required>
-                    </div> -->
                     <div class="col-sm-6 input_value">
                         <h2><button class="btn btn-secondary" type="submit"> Register</button></h2>
 

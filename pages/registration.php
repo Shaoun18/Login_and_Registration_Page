@@ -15,7 +15,7 @@ $num = mysqli_num_rows($result);
 
 if ($num > 0) {
     // echo "<center><h1>Email Already Registered</h1>";
-    header('location:action.php?page=registration&success=email_taken');
+    header('location:action.php?page=registration&error=email_taken');
     exit;
 } else {
     // Email doesn't exist, proceed with registration

@@ -12,7 +12,7 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
     if ($result && mysqli_num_rows($result) === 1) {
         $row = mysqli_fetch_assoc($result);
 
-        // if you are storing plain password (bad practice but for now)
+        // storing plain password
         if ($row['password'] === $pass) {
             $_SESSION['id'] = $row['id'];
             $_SESSION['username'] = $row['email'];

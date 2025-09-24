@@ -1,11 +1,9 @@
-# Login-and-Registration-Page
+## Login and Registration Page
 
-### Screenshots
-
-#### Login Page
+## Login Page
 
 ![Login](images/Login.png)
 
-#### Register Page
+## Registration Page
 
 ![Register](images/Register.png)

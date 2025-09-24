@@ -7,29 +7,27 @@ body {
   background-size: cover;
   background-position: center;
 }
-.login-box {
-  max-width: 700px;
-  float: none;
-  margin: 100px auto;
+
+
+#foot {
+  background: #170303;
+  color: white;
+  border: 20px;
+  padding: 10px;
 }
-.login-left {
+
+/* .login-right {
   background: rgba(211, 211, 211, 0.5);
   padding: 30px;
-}
-.login-right {
-  background: rgba(211, 211, 211, 0.5);
-  padding: 30px;
-}
-.form-control {
+} */
+
+/* .form-control {
   background-color: transparent !important;
 }
 a {
   color: blueviolet !important;
   margin-top: -40px !important;
 }
-h1 {
-  color: black !important;
-  margin-top: 40px !important;
-  text-align: center;
-  text-transform: uppercase;
-}
+
+*/
+

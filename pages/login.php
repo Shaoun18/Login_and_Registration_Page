@@ -1,7 +1,6 @@
 <?php
 session_start();
-$conn = mysqli_connect('localhost', 'shaoun20', '123456');
-mysqli_select_db($conn, 'login_page');
+include 'db.php';
 $name = $_POST['user'];
 $pass = $_POST['password'];
 

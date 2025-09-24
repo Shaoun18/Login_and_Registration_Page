@@ -1,46 +1,45 @@
-<html>
+<?php include 'includes/header.php' ?>
+<div class="container">
+    <div class="login-box">
+        <header id="head">
+            <h2>
+                Welcome to Login Database Management System<br />
+            </h2>
+        </header>
+        <div class="row" style="margin: auto;">
+            <div class="login-left">
+                <h1> Login Here</h1>
 
-<head>
-    <title>User Login Page</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="login.css" type="text/css" />
-</head>
+                <form action="pages/login.php" method="POST">
 
-<body>
-    <div class="container">
-        <div class="login-box">
-            <header id="head">
-                <h2>
-                    <center>Welcome to Login Database Management System<br />
-                </h2>
-            </header>
-            <div class="row">
-                <div class="col-md-6 login-left">
-                    <center>
-                        <h1> Login Here</h1>
-                        <form action="login.php" method="POST">
-                            <div class="form-group">
-                                <label>Username</label>
-                                <input type="text" name="user" class="form-control" required>
-                            </div>
-                            <div class="form-group">
-                                <label>Password</label>
-                                <input type="password" name="password" class="form-control" required>
-                            </div>
-                            <h2><button type="submit" class="btn-btn-primary"> Login</button></h2>
-                        </form>
-                        <a href="Reg.php">
-                            <h4>NO Account please Registar Here<h4>
+                    <div class="row mb-3">
+                        <!-- <label class="col-sm-3 col-form-label">Name</label> -->
+                        <div class="col-sm-6 login-input">
+                            <input type="text" class="form-control" name="user" value="" required placeholder="USERNAME">
+                        </div>
+                    </div>
+
+                    <div class=" row mb-3">
+                        <!-- <label class="col-sm-3 col-form-label">Name</label> -->
+                        <div class="col-sm-6 password-input">
+                            <input type="password" class="form-control" name="password" value="" required placeholder="PASSWORD">
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-6 password-input">
+                        <h2><button class="btn btn-primary" type="submit"> Login</button></h2>
+                        <a href="pages/Reg.php">
+                            <h4><button class="btn btn-info" type="button">Register</button>
+                                <?php include 'includes/message.php'; ?>
+                                <h4>
                         </a>
-                </div>
-            </div>
-            <footer id="foot">
-                <h3>
-                    <center>All Rights Reserved by ProgrammerShaoun@2021</center>
-                </h3>
-            </footer>
-        </div>
-    </div>
-</body>
 
-</html>
+                    </div>
+                </form>
+
+
+
+            </div>
+        </div>
+        <?php include 'includes/footer.php' ?>

@@ -16,7 +16,7 @@
             </header>
             <div class="col-md-6 login-right">
                 <center>
-                    <h2> Registar Here</h2>
+                    <h2> Register Here</h2>
                     <form action="registation.php" method="POST">
                         <div class="form-group">
                             <label> Enter your fname : </label>
@@ -34,10 +34,10 @@
                             <label>Enter your Password : </label>
                             <input type="password" name="password" class="form-control" required>
                         </div>
-                        <h2><button type="submit" class="btn-btn-primary"> Registar</button></h2>
+                        <h2><button type="submit"> Register</button></h2>
                     </form>
                     <a href="index.php">
-                        <h4>Login Click Here<h4>
+                        <h4>Login<h4>
                     </a>
             </div>
             <footer id="foot">

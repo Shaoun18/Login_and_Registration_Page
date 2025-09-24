@@ -1,24 +1,31 @@
 <?php
 session_start();
-//header('location:index.php');
 include 'db/db.php';
+
 $fname = $_POST['fname'];
 $lname = $_POST['lname'];
 $phone = $_POST['phone'];
-$username  = $_POST['email'];
-$pass  = $_POST['password'];
+$username = $_POST['email'];
+$pass = $_POST['password'];
 
-$s = "select * from usertable where fname='$fname'&& lname='$lname'&& phone='$phone'&& email ='$username'&&password='$pass'";
+// Duplicate email check
+$check_email = "SELECT * FROM clients WHERE email = '$username'";
+$result = mysqli_query($conn, $check_email);
+$num = mysqli_num_rows($result);
 
-$result = mysqli_query($conn, $s);
-$num    = mysqli_num_rows($result);
-
-if ($num == 1) {
-    echo "<center><h1>Username Already Taken</h1>";
-} else {
-    $reg = "insert into usertable(fname,lname,phone,email,password) values('$fname','$lname','$phone','$username','$pass')";
-    mysqli_query($conn, $reg);
-    // echo "<center><h1>Registration Suc</h1>";
-    header('location:index.php?success=Registration');
+if ($num > 0) {
+    // echo "<center><h1>Email Already Registered</h1>";
+    header('location:action.php?page=registration&success=email_taken');
     exit;
+} else {
+    // Email doesn't exist, proceed with registration
+    $reg = "INSERT INTO clients(fname, lname, phone, email, password) 
+            VALUES('$fname','$lname','$phone','$username','$pass')";
+
+    if (mysqli_query($conn, $reg)) {
+        header('location:action.php?page=home&success=Registration');
+        exit;
+    } else {
+        echo "<center><h1>Registration Failed: " . mysqli_error($conn) . "</h1>";
+    }
 }

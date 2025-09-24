@@ -5,12 +5,14 @@ if (isset($_GET['success'])) {
 
     if ($_GET['success'] == 'Registration') {
         $message = 'Registration Successfully';
+    } else if ($_GET['success'] == 'email_taken') {
+        $message = 'Email Already Registered';
     }
 
     if (!empty($message)) {
         echo "
             <div id='autoHideAlert' class='alert alert-success alert-dismissible fade show position-fixed' 
-                 style='bottom: 200px; right: 200px; z-index: 1050;'>
+                 style='bottom: 20px; right: 20px; z-index: 1050;'>
                 <strong>$message</strong>
             </div>
             <script>

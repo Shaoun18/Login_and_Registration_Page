@@ -11,7 +11,6 @@
         <div class="row" style="margin: auto;">
             <div class="login-left">
                 <!-- <div class="col-md-6 login-right"> -->
-
                 <h1> Register Here</h1>
                 <form action="action.php?page=registration_db" method="POST">
 
@@ -71,6 +70,7 @@
 
                         <a href="action.php?page=home">
                             <button class="btn btn-info" type="button" style="width: 50%; margin-left: 110px">Login </button>
+                            <?php include 'includes/message.php'; ?>
                         </a>
                     </div>
                 </form>

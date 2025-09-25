@@ -7,6 +7,7 @@ $lname = $_POST['lname'];
 $phone = $_POST['phone'];
 $username = $_POST['email'];
 $pass = $_POST['password'];
+$hashed = md5($pass);
 
 // Duplicate email check
 $check_email = "SELECT * FROM clients WHERE email = '$username'";
@@ -18,9 +19,9 @@ if ($num > 0) {
     header('location:action.php?page=registration&error=email_taken');
     exit;
 } else {
-    // Email doesn't exist, proceed with registration
+    // Data Insert for the new registration
     $reg = "INSERT INTO clients(fname, lname, phone, email, password) 
-            VALUES('$fname','$lname','$phone','$username','$pass')";
+            VALUES('$fname','$lname','$phone','$username','$hashed')";
 
     if (mysqli_query($conn, $reg)) {
         header('location:action.php?page=home&success=Registration');

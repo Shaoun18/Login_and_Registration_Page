@@ -2,12 +2,13 @@
 session_start();
 include 'db/db.php';
 
-$fname = $_POST['fname'];
-$lname = $_POST['lname'];
-$phone = $_POST['phone'];
-$username = $_POST['email'];
+$fname = mysqli_real_escape_string($conn, $_POST['fname']);
+$lname = mysqli_real_escape_string($conn, $_POST['lname']);
+$phone = mysqli_real_escape_string($conn, $_POST['phone']);
+$username = mysqli_real_escape_string($conn, $_POST['email']);
 $pass = $_POST['password'];
-$hashed = md5($pass);
+$hashed = password_hash($pass, PASSWORD_DEFAULT);
+
 
 // Duplicate email check
 $check_email = "SELECT * FROM clients WHERE email = '$username'";

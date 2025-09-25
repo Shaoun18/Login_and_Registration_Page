@@ -75,8 +75,8 @@ LOGIN_AND_REGISTRATION_PAGE/
 
 ## ⚠️ Security Note
 
-Right now, passwords are stored as **plain text**.
-👉 You should use PHP’s `password_hash()` and `password_verify()` for secure password handling.
+* Right now, passwords are stored as **md5()**.
+* 👉 You should use PHP’s `password_hash()` and `password_verify()` for secure password handling.
 
 
 

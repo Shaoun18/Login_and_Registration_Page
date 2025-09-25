@@ -38,14 +38,16 @@
                     <div class="row mb-3">
                         <!-- <label class="col-sm-3 col-form-label">Name</label> -->
                         <div class="col-sm-6 input_value">
-                            <input type="email" class="form-control" name="email" required placeholder="Enter Your Email Address">
+                            <input type="email" id="email" class="form-control" name="email" required placeholder="Enter Your Email Address">
+                            <span id="emailError" class="error"></span>
                         </div>
                     </div>
 
                     <div class="row mb-3">
                         <!-- <label class="col-sm-3 col-form-label">Name</label> -->
                         <div class="col-sm-6 input_value">
-                            <input type="password" class="form-control" name="password" required placeholder="Password">
+                            <input type="password" id="password" class="form-control" name="password" required placeholder="Password">
+                            <span id="passwordError" class="error"></span>
                         </div>
                     </div>
 
@@ -60,4 +62,6 @@
                 </form>
             </div>
         </div>
+
+        <script src="asset/js/app.js"></script>
         <?php include 'includes/footer.php'; ?>

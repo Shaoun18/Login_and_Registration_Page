@@ -13,13 +13,11 @@
 
 .login-left {
   background: rgba(211, 211, 211, 0.5);
-  padding: 40px;
+  padding: 15px;
 }
 
 h1 {
   color: black !important;
-  margin-top: 20px !important;
-  margin-bottom: 20px !important;
   text-align: center;
   text-transform: uppercase;
 }
@@ -32,4 +30,9 @@ h1 {
 button.btn.btn-primary,
 button.btn.btn-secondary {
   width: 100%;
+}
+
+.error {
+  color: red;
+  font-size: 1.1rem;
 }

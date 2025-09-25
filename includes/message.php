@@ -32,11 +32,14 @@ if (isset($_GET['error'])) {
 
     if ($_GET['error'] == 'wrongPass') {
         $errorMsg = 'Incorrect Password!';
-    } else if ($_GET['error'] == 'noUser') {
-        $errorMsg = 'User Not Found!';
     } else if ($_GET['error'] == 'email_taken') {
         $errorMsg = 'Email Already Registered';
     }
+
+    // else if ($_GET['error'] == 'noUser') {
+    //     $errorMsg = 'User Not Found!';
+    // } 
+
 
     if (!empty($errorMsg)) {
         echo "

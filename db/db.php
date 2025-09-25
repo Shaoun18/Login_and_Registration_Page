@@ -2,7 +2,7 @@
 $hostname = 'localhost';
 $username = 'root';
 $password = '';
-$dbname   = 'User';
+$dbname   = 'User';   //New DataBase Create
 
 // Try to connect without selecting a database
 $temp_conn = new mysqli($hostname, $username, $password);

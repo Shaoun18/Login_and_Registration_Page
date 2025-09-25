@@ -48,9 +48,12 @@ LOGIN_AND_REGISTRATION_PAGE/
 │── app/
 │   └── classes/
 │       └── homeController.php
-│── asset/css/
-│   ├── login.css
-│   └── style.css
+│── asset/
+│   ├── css/
+│   │   ├── login.css
+│   │   └── style.css
+│   └── js/
+│       └── app.js
 │── db/
 │   └── db.php
 │── includes/
@@ -72,13 +75,10 @@ LOGIN_AND_REGISTRATION_PAGE/
 ```
 
 
-
 ## ⚠️ Security Note
 
-* Right now, passwords are stored as **md5()**.
-* 👉 You should use PHP’s `password_hash()` and `password_verify()` for secure password handling.
-
-
+* Right now, passwords are stored as 👉PHP’s `password_hash()` and `password_verify()` for secure password handling.
+* Live Validation Added for better user experience.
 
 ## 🛠️ Future Improvements
 
